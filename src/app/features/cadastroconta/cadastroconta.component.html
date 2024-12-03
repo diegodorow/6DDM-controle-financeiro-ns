@@ -1,0 +1,18 @@
+<ActionBar title="Cadastrar nova conta" class="action-bar"></ActionBar>
+
+<StackLayout class="p-20">
+  <form [formGroup]="meuFormGroup">
+    <TextField
+      required
+      hint="Nome"
+      [(ngModel)]="formData.nome"
+      class="input-field"
+    ></TextField>
+
+    <Button
+      text="Cadastrar"
+      (tap)="onSubmit()"
+      class="btn btn-primary"
+    ></Button>
+  </form>
+</StackLayout>

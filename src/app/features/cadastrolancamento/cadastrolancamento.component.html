@@ -1,0 +1,29 @@
+<ActionBar title="Cadastrar novo lançamento" class="action-bar"></ActionBar>
+
+<StackLayout class="p-20">
+  <TextField
+    hint="Descricao"
+    [(ngModel)]="formData.descricao"
+    class="input-field"
+  ></TextField>
+
+  <TextField
+    hint="Tipo"
+    [(ngModel)]="formData.tipo"
+    class="input-field"
+  ></TextField>
+
+  <TextField
+    hint="Ação"
+    [(ngModel)]="formData.acao"
+    class="input-field"
+  ></TextField>
+
+  <TextField
+    hint="Valor"
+    [(ngModel)]="formData.valor"
+    class="input-field"
+  ></TextField>
+
+  <Button text="Cadastrar" (tap)="onSubmit()" class="btn btn-primary"></Button>
+</StackLayout>
